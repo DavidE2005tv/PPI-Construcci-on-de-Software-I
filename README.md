@@ -1,6 +1,6 @@
 # PPI-Construccion-de-Software-I
 
-# Dependecias/requisitos funcionales
+# Dependencias/requisitos funcionales
 
 # 1. LogIn.
 # 2. Register.
