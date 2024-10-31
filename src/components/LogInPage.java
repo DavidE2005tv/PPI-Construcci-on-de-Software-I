@@ -1,7 +1,8 @@
-package componentes;
+package components;
 
-import BD.Querys;
+import Controllers.UserController;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -11,12 +12,13 @@ public class LogInPage extends javax.swing.JFrame{
     private JPanel panel1;
     private JTextField textField1;
     private JPasswordField passwordField1;
-    private JButton iniciarSesiónButton;
-    private JButton registrarseButton;
+    private JButton logInButton;
+    private JButton singUpButton;
     private JPanel panel2;
     private JPanel panel3;
     private JPanel panel4;
     private JLabel noCuenta;
+    private JLabel labelImage;
     private JFrame frame;
 
     public LogInPage() {
@@ -38,26 +40,26 @@ public class LogInPage extends javax.swing.JFrame{
 
         // INICIAR SESION BOTON
 
-        iniciarSesiónButton.setForeground(new Color(255, 255, 255));
-        iniciarSesiónButton.setBackground(new Color(14, 98, 81));
-        iniciarSesiónButton.setOpaque(true); // Necesario para que el color de fondo sea visible
-        iniciarSesiónButton.setAlignmentX(Component.CENTER_ALIGNMENT);
-        iniciarSesiónButton.setFocusPainted(false);
-        iniciarSesiónButton.setBorderPainted(false);
+        logInButton.setForeground(new Color(255, 255, 255));
+        logInButton.setBackground(new Color(14, 98, 81));
+        logInButton.setOpaque(true); // Necesario para que el color de fondo sea visible
+        logInButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        logInButton.setFocusPainted(false);
+        logInButton.setBorderPainted(false);
 
 
         // evento o accion que se realizará al dar click en el boton iniciarSesiónBotton
-        iniciarSesiónButton.addActionListener(new ActionListener() {
+        logInButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
                 // Creando un nueva instancia de consulta
-                Querys bd = new Querys();
-                bd.conector();
+                UserController us = new UserController();
+                us.conector();
 
 
                 // llamando el metodo login usuario de la instancia de consulta
-                bd.loginUsuario(textField1.getText(), passwordField1.getText());
+                us.loginUser(textField1.getText(), passwordField1.getText());
 
                 //cierra la ventana luego de que el usuario se halla logueado
                 frame.setVisible(false);
@@ -66,13 +68,13 @@ public class LogInPage extends javax.swing.JFrame{
 
 
         // REGISTRARSE BOTON
-        registrarseButton.setForeground(new Color(255, 255, 255));
-        registrarseButton.setBackground(new Color(14, 98, 81));
-        registrarseButton.setOpaque(true); // Necesario para que el color de fondo sea visible
-        registrarseButton.setFocusPainted(false);
-        registrarseButton.setBorderPainted(false);
+        singUpButton.setForeground(new Color(255, 255, 255));
+        singUpButton.setBackground(new Color(14, 98, 81));
+        singUpButton.setOpaque(true); // Necesario para que el color de fondo sea visible
+        singUpButton.setFocusPainted(false);
+        singUpButton.setBorderPainted(false);
 
-        registrarseButton.addActionListener(new ActionListener() {
+        singUpButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 

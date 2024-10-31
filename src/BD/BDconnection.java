@@ -14,6 +14,7 @@ public class BDconnection{
     private static final String url = "jdbc:mysql://localhost:3306/ppi";
 
     public void conector(){
+
         con = null;
         try{
             Class.forName(driver);
@@ -21,6 +22,15 @@ public class BDconnection{
         }
         catch(ClassNotFoundException | SQLException e){
             JOptionPane.showMessageDialog(null, "Error de conexion " + e.getMessage());
+        }
+    }
+    public void closeConnection() {
+        try {
+            if (con != null) {
+                con.close();
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Error al cerrar la conexión: " + e.getMessage());
         }
     }
 }

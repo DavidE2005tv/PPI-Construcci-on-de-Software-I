@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="componentes.RegisterPage">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="components.RegisterPage">
   <grid id="27dc6" binding="panel2" layout-manager="GridLayoutManager" row-count="18" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
@@ -8,7 +8,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="7f4b7" binding="Registrarse" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="7f4b7" binding="singUp" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -70,7 +70,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="7089c" class="javax.swing.JLabel" binding="Nombre">
+          <component id="7089c" class="javax.swing.JLabel" binding="name">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -86,7 +86,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="5998d" class="javax.swing.JTextField" binding="nombre">
+              <component id="5998d" class="javax.swing.JTextField" binding="nameField">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -129,7 +129,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="95166" class="javax.swing.JTextField" binding="correo">
+          <component id="95166" class="javax.swing.JTextField" binding="emailField">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
@@ -205,7 +205,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="8be61" class="javax.swing.JButton" binding="registrarseButton" default-binding="true">
+          <component id="8be61" class="javax.swing.JButton" binding="singUpButton" default-binding="true">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -242,7 +242,7 @@
               <text value="Ya tengo cuenta"/>
             </properties>
           </component>
-          <component id="f7672" class="javax.swing.JButton" binding="iniciarSesiónButton" default-binding="true">
+          <component id="f7672" class="javax.swing.JButton" binding="logInButton" default-binding="true">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>

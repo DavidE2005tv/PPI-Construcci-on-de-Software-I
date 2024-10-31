@@ -1,12 +1,10 @@
-package componentes;
+package components;
 
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.border.*;
-import java.text.NumberFormat;
-import java.util.Locale;
 
-public class PropiedadFormulario extends javax.swing.JFrame {
+public class propertiesForm extends javax.swing.JFrame {
 
     private JFrame frame4;
     private JPanel mainPanel, imagePanel, infoPanel, bookingPanel;
@@ -17,7 +15,7 @@ public class PropiedadFormulario extends javax.swing.JFrame {
     private Font subtitleFont = new Font("Arial", Font.BOLD, 18);
     private Font normalFont = new Font("Arial", Font.PLAIN, 14);
 
-    public PropiedadFormulario() {
+    public propertiesForm() {
         frame4 = new JFrame();
 
 
@@ -336,7 +334,7 @@ public class PropiedadFormulario extends javax.swing.JFrame {
         }
 
         SwingUtilities.invokeLater(() -> {
-            PropiedadFormulario frame = new PropiedadFormulario();
+            propertiesForm frame = new propertiesForm();
             frame.setVisible(true);
         });
     }
