@@ -1,5 +1,16 @@
 package components;
 
+/**
+ *
+ * @authors
+ * name: DAVID ESCOBAR RUIZ
+ * email: DAVIDESCOBARRUIZ30@GMAIL.COM
+ *
+ * name: ANDERSON LONDOÑO AVENDAÑO
+ * email: AVENDANOANDERSON032@GMAIL.COM
+ *
+ */
+
 import Controllers.ActualUser;
 import Controllers.PostController;
 import Controllers.ProfileController;
